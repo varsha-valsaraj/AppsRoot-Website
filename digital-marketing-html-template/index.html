@@ -282,6 +282,381 @@
             .navbar-brand .brand-title { font-size: 1rem; }
         }
 
+        /* New: Marketing hero carousel styles */
+        #marketing-carousel {
+            position: relative;
+            overflow: hidden;
+            border-radius: 18px;
+            box-shadow: 0 20px 60px rgba(30,40,90,0.08);
+        }
+        #marketing-carousel .carousel-inner {
+            height: 460px;
+        }
+        .marketing-slide {
+            height: 460px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 2.5rem;
+            text-align: left;
+        }
+        .marketing-slide .content {
+            max-width: 420px;
+        }
+        .marketing-slide h2 {
+            font-size: 2.25rem;
+            line-height: 1.05;
+            font-weight: 700;
+            margin-bottom: .5rem;
+            text-shadow: 0 6px 30px rgba(10,20,60,0.18);
+        }
+        .marketing-slide p.lead { color: rgba(255,255,255,0.92); font-size: 1.05rem; margin-bottom: 1rem; }
+        .marketing-cta { margin-top: 1rem; }
+        .marketing-cta .btn { margin-right: .5rem; }
+
+        /* Per-slide background styles */
+        .slide-1 { background: linear-gradient(120deg,#0d6efd 0%, #6dd3ff 100%); }
+        .slide-2 { background: linear-gradient(120deg,#7c3aed 0%, #ff80bf 100%); }
+        .slide-3 { background: linear-gradient(120deg,#06b6d4 0%, #3b82f6 100%); }
+
+        /* Decorative right-side graphic */
+        .marketing-graphic { margin-left: 32px; width: 220px; height: 220px; border-radius: 20px; display:flex; align-items:center; justify-content:center; background: rgba(255,255,255,0.08); box-shadow: inset 0 6px 18px rgba(255,255,255,0.06); }
+        .marketing-graphic i { font-size: 5.25rem; color: white; filter: drop-shadow(0 10px 30px rgba(0,0,0,0.12)); }
+
+        @media (max-width: 991px) {
+            #marketing-carousel .carousel-inner, .marketing-slide { height: 360px; }
+            .marketing-graphic { width: 180px; height: 180px; margin-left: 20px; }
+            .marketing-slide h2 { font-size: 1.75rem; }
+        }
+
+        /* Left marketing panel to visually match the carousel */
+        .marketing-panel {
+            background: linear-gradient(120deg,#0d6efd 0%, #6dd3ff 100%);
+            border-radius: 18px;
+            padding: 2.5rem;
+            box-shadow: 0 20px 60px rgba(13,110,253,0.12);
+            color: #fff;
+            min-height: 460px; /* match carousel */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .marketing-panel h1, .marketing-panel h2, .marketing-panel .display-4 { color: #fff; }
+        .marketing-panel p.lead, .marketing-panel p { color: rgba(255,255,255,0.95); }
+        .marketing-panel .btn-primary {
+            background: #fff;
+            color: #0d6efd;
+            border: none;
+        }
+        .marketing-panel .btn-outline-primary {
+            border-color: rgba(255,255,255,0.28);
+            color: #fff;
+            background: transparent;
+        }
+        @media (max-width: 991px) {
+            .marketing-panel { min-height: 360px; padding: 1.5rem; }
+        }
+
+        /* Professional refinements for hero */
+        /* Softer shadows, muted gradients, consistent rounded cards */
+        #marketing-carousel {
+            border-radius: 14px;
+            box-shadow: 0 12px 32px rgba(16,24,40,0.06);
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.04);
+        }
+        #marketing-carousel .carousel-inner { height: auto; }
+        .marketing-slide { height: 420px; padding: 2rem; }
+        .marketing-slide .content { max-width: 420px; }
+
+        /* Muted, professional gradients */
+        .slide-1 { background: linear-gradient(135deg,#0b5ed7 0%, #2fb0ff 100%); }
+        .slide-2 { background: linear-gradient(135deg,#5b21b6 0%, #ff6fbf 100%); }
+        .slide-3 { background: linear-gradient(135deg,#0891b2 0%, #3b82f6 100%); }
+
+        .marketing-slide h2 { font-size: 1.9rem; color: #ffffff; margin-bottom: .25rem; }
+        .marketing-slide p.lead { color: rgba(255,255,255,0.92); }
+
+        /* Clean CTA buttons */
+        .marketing-cta .btn { border-radius: 999px; padding: .75rem 1.6rem; }
+        .marketing-cta .btn.btn-light { background: rgba(255,255,255,0.95); color: #0b5ed7; }
+        .marketing-cta .btn.btn-outline-light { border-color: rgba(255,255,255,0.18); color: rgba(255,255,255,0.95); }
+
+        /* Left panel styled as a card to match carousel */
+        .marketing-panel {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: 0 12px 32px rgba(16,24,40,0.06);
+            color: #0f172a;
+            min-height: 420px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-left: 6px solid #0b5ed7; /* subtle accent */
+        }
+        .marketing-panel h1, .marketing-panel h2, .marketing-panel .display-4 { color: #0f172a; }
+        .marketing-panel p.lead, .marketing-panel p { color: rgba(15,23,42,0.85); }
+        .marketing-panel .btn-primary { background: #0b5ed7; color: #fff; border: none; box-shadow: 0 8px 20px rgba(11,94,215,0.12); border-radius: 999px; }
+        .marketing-panel .btn-outline-primary { border-color: rgba(11,94,215,0.12); color: #0b5ed7; background: transparent; border-radius: 999px; }
+
+        /* Carousel indicators (polished) */
+        #marketing-carousel .carousel-indicators { bottom: 12px; }
+        #marketing-carousel .carousel-indicators button {
+            width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.6); border: none; transition: transform .18s ease, background .18s ease; box-shadow: 0 4px 10px rgba(2,6,23,0.12);
+        }
+        #marketing-carousel .carousel-indicators .active { background: #fff; transform: scale(1.15); }
+
+        /* New: Paging / indicators final styles */
+        #marketing-carousel .carousel-indicators {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 16px;
+            display: flex;
+            gap: 10px;
+            padding: 6px 12px;
+            /* Blue-tinted translucent pill instead of solid white */
+            background: linear-gradient(90deg, rgba(11,94,215,0.10), rgba(43,132,255,0.06));
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border: 1px solid rgba(11,94,215,0.06);
+            border-radius: 999px;
+            box-shadow: 0 10px 30px rgba(15,23,42,0.06);
+            z-index: 10;
+            align-items: center;
+            justify-content: center;
+        }
+        #marketing-carousel .carousel-indicators button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(11,94,215,0.12);
+            border: none;
+            transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+            box-shadow: 0 4px 10px rgba(2,6,23,0.06);
+        }
+        #marketing-carousel .carousel-indicators button:focus {
+            outline: none;
+            box-shadow: 0 0 0 6px rgba(11,94,215,0.06);
+        }
+        #marketing-carousel .carousel-indicators .active {
+            background: #0b5ed7;
+            transform: scale(1.15);
+            box-shadow: 0 6px 18px rgba(11,94,215,0.14);
+        }
+        /* Make indicators lighter on dark slides when necessary */
+        .marketing-slide { position: relative; }
+        .marketing-slide .carousel-indicators-inset { display: none; }
+
+        @media (max-width: 575px) {
+            #marketing-carousel .carousel-indicators {
+                bottom: 8px;
+                padding: 4px 8px;
+            }
+            #marketing-carousel .carousel-indicators button {
+                width: 8px;
+                height: 8px;
+            }
+        }
+
+        /* New hero styles */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+            background-color: #e6f4ff;
+            border-radius: 18px;
+            box-shadow: 0 20px 60px rgba(30,40,90,0.08);
+        }
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-decor {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: url('img/hero-decor.png') no-repeat center center;
+            background-size: cover;
+            z-index: 1;
+            pointer-events: none;
+        }
+        .hero-stats {
+            margin-top: 2rem;
+        }
+        .hero-stats h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: .5rem;
+        }
+        .hero-stats small {
+            color: rgba(0,0,0,0.6);
+        }
+        .client-logos {
+            opacity: 0.9;
+        }
+        .client-logos img {
+            height: 36px;
+            margin-right: 1rem;
+        }
+
+        @media (max-width: 991px) {
+            .hero-section {
+                border-radius: 0;
+                box-shadow: none;
+            }
+            .hero-decor {
+                display: none;
+            }
+            .hero-stats {
+                display: none;
+            }
+        }
+
+        /* Hero card: single rounded container holding both columns with blue accent */
+        .hero-card {
+            position: relative;
+            display: flex;
+            gap: 24px;
+            align-items: stretch;
+            width: 100%;
+            padding: 1.25rem; /* card padding */
+            border-radius: 18px;
+            background: #ffffff; /* restored: white card background */
+            box-shadow: 0 18px 50px rgba(20,40,80,0.06);
+            overflow: visible;
+        }
+        /* Blue vertical accent on the left of the card */
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            left: 14px; /* small inset from card edge */
+            top: 12px;
+            bottom: 12px;
+            width: 10px;
+            border-radius: 8px;
+            background: linear-gradient(180deg,#0b5ed7 0%, #2fb0ff 100%);
+            box-shadow: 0 10px 30px rgba(11,94,215,0.12);
+        }
+
+        /* Ensure columns stretch equally inside the card */
+        .hero-card .row { width:100%; }
+        .hero-card .col-lg-6 { display:flex; align-items:stretch; }
+        .hero-card .marketing-panel, .hero-card .marketing-carousel-wrap {
+            flex: 1 1 0%;
+            display: flex;
+            align-items: center;
+        }
+        /* Revert: make marketing-inner transparent so .marketing-panel controls the left card appearance */
+        .hero-card .marketing-panel { background: transparent; padding: 0; box-shadow: none; border-left: none; }
+        .hero-card .marketing-panel .marketing-inner {
+            background: transparent; /* restored to transparent */
+            padding: 1.25rem;
+            border-radius: 8px;
+            width:100%;
+            box-shadow: none;
+        }
+
+        /* Carousel side should fill height and keep rounded corners on its internal carousel */
+        .hero-card .marketing-carousel-wrap { justify-content: center; }
+        .hero-card #marketing-carousel { width:100%; height:100%; border-radius: 12px; }
+        .hero-card #marketing-carousel .carousel-inner { height: 100%; }
+        .marketing-slide { height: 100%; }
+
+        /* Reduce internal paddings so both sides align visually */
+        .marketing-panel .display-4 { margin-bottom: .5rem; }
+
+        @media (max-width: 991px) {
+            .hero-card { flex-direction: column; padding: .75rem; }
+            .hero-card::before { display: none; }
+            .hero-card .col-lg-6 { width:100%; }
+            .hero-card .marketing-panel { order: 1; }
+            .hero-card .marketing-carousel-wrap { order: 2; margin-top: .75rem; }
+            .hero-card { border-radius: 12px; }
+        }
+
+        /* Also apply the same paging / pill-style indicators to other carousels (hero icons and any carousel inside the hero-card) */
+        #hero-icons-carousel .carousel-indicators,
+        .hero-card .carousel-indicators,
+        .carousel-indicators.pill-style {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 16px;
+            display: flex;
+            gap: 10px;
+            padding: 6px 12px;
+            /* Blue-tinted translucent pill instead of solid white */
+            background: linear-gradient(90deg, rgba(11,94,215,0.10), rgba(43,132,255,0.06));
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border: 1px solid rgba(11,94,215,0.06);
+            border-radius: 999px;
+            box-shadow: 0 10px 30px rgba(15,23,42,0.06);
+            z-index: 10;
+            align-items: center;
+            justify-content: center;
+        }
+        #hero-icons-carousel .carousel-indicators button,
+        .hero-card .carousel-indicators button,
+        .carousel-indicators.pill-style button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(11,94,215,0.12);
+            border: none;
+            transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+            box-shadow: 0 4px 10px rgba(2,6,23,0.06);
+        }
+        #hero-icons-carousel .carousel-indicators button:focus,
+        .hero-card .carousel-indicators button:focus,
+        .carousel-indicators.pill-style button:focus {
+            outline: none;
+            box-shadow: 0 0 0 6px rgba(11,94,215,0.06);
+        }
+        #hero-icons-carousel .carousel-indicators .active,
+        .hero-card .carousel-indicators .active,
+        .carousel-indicators.pill-style .active {
+            background: #0b5ed7;
+            transform: scale(1.15);
+            box-shadow: 0 6px 18px rgba(11,94,215,0.14);
+        }
+
+        @media (max-width: 575px) {
+            #hero-icons-carousel .carousel-indicators,
+            .hero-card .carousel-indicators,
+            .carousel-indicators.pill-style {
+                bottom: 8px;
+                padding: 4px 8px;
+            }
+            #hero-icons-carousel .carousel-indicators button,
+            .hero-card .carousel-indicators button,
+            .carousel-indicators.pill-style button {
+                width: 8px;
+                height: 8px;
+            }
+        }
+
+        /* Tidy the white space under the carousel: make right side feel continuous */
+        .hero-card {
+            /* gentle blue-tinted support under carousel so the bottom area isn't stark white */
+            background: linear-gradient(90deg, #ffffff 0%, #f3fbff 100%);
+            padding-bottom: 0; /* allow carousel to sit flush to the bottom */
+        }
+        /* keep left panel spacing while allowing carousel to fill to bottom */
+        .hero-card .marketing-inner { padding-bottom: 1.25rem; }
+
+        /* Ensure carousel element fully fills its column using flex layout */
+        .hero-card .marketing-carousel-wrap { display:flex; align-items:stretch; }
+        .hero-card #marketing-carousel { display:flex; flex-direction:column; height:100%; }
+        .hero-card #marketing-carousel .carousel-inner { flex:1 1 auto; height:auto !important; }
+        .hero-card .marketing-slide { display:flex; align-items:center; height:100%; }
+
+        /* Maintain rounded corners and clipping while flush at bottom */
+        .hero-card #marketing-carousel { border-radius: 12px; overflow: hidden; }
     </style>
 </head>
 
@@ -346,105 +721,154 @@
 
 
     <!-- Hero Start (replacing carousel) -->
-    <section class="container-fluid" style="background-color: #e6f4ff;">
+    <section class="container-fluid hero-section">
         <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <p class="text-uppercase fw-medium mb-2 text-primary">Grow with AppsRoot</p>
-                    <h1 class="display-4 fw-bold mb-3 text-dark">Grow Your Business Now</h1>
-                    <p class="lead mb-4 text-dark">Strategic digital marketing, creative design, and data-driven analytics to help your business scale faster.</p>
-                    <a href="service.html" class="btn btn-primary btn-lg me-2">Our Services</a>
-                    <a href="contact.html" class="btn btn-outline-primary btn-lg">Get A Quote</a>
-                </div>
-                <div class="col-lg-6 text-center mt-4 mt-lg-0 hero-right">
-                    <!-- Hero icons carousel: AI, YouTube, Instagram (5s interval) -->
-                    <div id="hero-icons-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="false">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="d-flex flex-column align-items-center justify-content-center slide-inner">
-                                    <i class="fas fa-robot fa-6x fantasy-icon mb-3" aria-hidden="true"></i>
-                                    <h4 class="mb-0">AI Solutions</h4>
-                                    <p class="text-muted">Automation · Intelligence · Insights</p>
+            <!-- Single hero card containing both columns -->
+            <div class="hero-card">
+                <div class="row g-0 align-items-stretch w-100">
+                    <div class="col-lg-6">
+                        <div class="marketing-panel">
+                            <div class="marketing-inner">
+                                <p class="text-uppercase fw-medium mb-2 text-muted small">Grow with AppsRoot</p>
+                                <h1 class="display-4 fw-bold mb-3">Grow Your Business Now</h1>
+                                <p class="lead mb-3 text-muted">Strategic digital marketing, creative design, and data-driven analytics to help your business scale faster.</p>
+
+                                <div class="d-flex flex-wrap align-items-center mb-3">
+                                    <span class="badge bg-light text-primary rounded-pill py-2 px-3 me-2">AI-Powered</span>
+                                    <span class="badge bg-light text-primary rounded-pill py-2 px-3 me-2">Data-Driven</span>
+                                    <span class="badge bg-light text-primary rounded-pill py-2 px-3">Performance</span>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex flex-column align-items-center justify-content-center slide-inner">
-                                    <i class="fab fa-youtube fa-6x fantasy-icon mb-3" style="background-image: radial-gradient(circle at 30% 25%, rgba(255,255,255,0.9), rgba(255,255,255,0.0) 20%), linear-gradient(135deg,#ff4b4b 0%, #ff7a5a 50%, #ffd36b 100%);" aria-hidden="true"></i>
-                                    <h4 class="mb-0">YouTube</h4>
-                                    <p class="text-muted">Video Strategy · Channel Optimization</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex flex-column align-items-center justify-content-center slide-inner">
-                                    <i class="fab fa-instagram fa-6x fantasy-icon mb-3" style="background-image: radial-gradient(circle at 30% 25%, rgba(255,255,255,0.9), rgba(255,255,255,0.0) 20%), linear-gradient(135deg,#f58529 0%,#dd2a7b 50%,#8134af 100%);" aria-hidden="true"></i>
-                                    <h4 class="mb-0">Instagram</h4>
-                                    <p class="text-muted">Creative Content · Engagement</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex flex-column align-items-center justify-content-center slide-inner">
-                                    <i class="fab fa-google fa-6x fantasy-icon mb-3" style="background-image: linear-gradient(135deg,#4285F4 0%,#34A853 33%,#FBBC05 66%,#EA4335 100%);" aria-hidden="true"></i>
-                                    <h4 class="mb-0">Google</h4>
-                                    <p class="text-muted">Search Ads · Performance</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex flex-column align-items-center justify-content-center slide-inner">
-                                    <i class="fab fa-facebook-f fa-6x fantasy-icon mb-3" style="background-image: linear-gradient(135deg,#1877F2 0%,#2563EB 100%);" aria-hidden="true"></i>
-                                    <h4 class="mb-0">Facebook</h4>
-                                    <p class="text-muted">Social Ads · Community</p>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="service.html" class="btn btn-primary btn-lg me-3">Our Services</a>
+                                    <a href="contact.html" class="btn btn-outline-primary btn-lg">Get A Quote</a>
+
+                                    <div class="ms-3 d-none d-md-flex align-items-center client-logos">
+                                        <img src="img/icon/icon-2.png" alt="Client" style="height:34px;" class="me-2">
+                                        <img src="img/icon/icon-3.png" alt="Client" style="height:34px;" class="me-2">
+                                        <img src="img/icon/icon-4.png" alt="Client" style="height:34px; opacity:.9;">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Indicators (small dots) optional: uncomment if you want them -->
-                        <!-- <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#hero-icons-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#hero-icons-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#hero-icons-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#hero-icons-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#hero-icons-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        </div> -->
+                    </div>
+                    <div class="col-lg-6 text-center mt-4 mt-lg-0 hero-right">
+                        <div class="marketing-carousel-wrap position-relative w-100 h-100">
+                            <!-- New marketing carousel -->
+                            <div id="marketing-carousel" class="carousel slide rounded-4 h-100" role="region" aria-label="Marketing carousel" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
+                                 <div class="carousel-inner h-100">
+                                 <div class="carousel-item active">
+                                     <div class="marketing-slide slide-1 d-flex align-items-center justify-content-center">
+                                         <div class="content d-flex align-items-center">
+                                             <div>
+                                                <h2>Digital Strategy that Converts</h2>
+                                                <p class="lead">Audience-first strategy, funnel design, and measurable growth plans tailored to your business.</p>
+                                                <div class="marketing-cta">
+                                                    <a href="service.html" class="btn btn-light btn-lg">See Services</a>
+                                                    <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Us</a>
+                                                </div>
+                                             </div>
+                                             <div class="marketing-graphic d-none d-md-flex ms-4"><i class="fas fa-chart-line"></i></div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                <div class="carousel-item">
+                                    <div class="marketing-slide slide-2 d-flex align-items-center justify-content-center">
+                                        <div class="content d-flex align-items-center">
+                                            <div>
+                                                <h2>Creative Design & Brand</h2>
+                                                <p class="lead">High-converting creative, brand systems, and content that captures attention.</p>
+                                                <div class="marketing-cta">
+                                                    <a href="service.html" class="btn btn-light btn-lg">Our Work</a>
+                                                    <a href="contact.html" class="btn btn-outline-light btn-lg">Get A Quote</a>
+                                                </div>
+                                            </div>
+                                            <div class="marketing-graphic d-none d-md-flex ms-4"><i class="fas fa-paint-brush"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="marketing-slide slide-3 d-flex align-items-center justify-content-center">
+                                        <div class="content d-flex align-items-center">
+                                            <div>
+                                                <h2>Performance Marketing</h2>
+                                                <p class="lead">Paid media, analytics, and optimization that scale ROI across channels.</p>
+                                                <div class="marketing-cta">
+                                                    <a href="service.html" class="btn btn-light btn-lg">Learn More</a>
+                                                    <a href="contact.html" class="btn btn-outline-light btn-lg">Start Today</a>
+                                                </div>
+                                            </div>
+                                            <div class="marketing-graphic d-none d-md-flex ms-4"><i class="fas fa-bullseye"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 </div>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Hero End -->
+         </div>
+     </section>
+     <!-- Hero End -->
 
 
     <!-- Features Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="row g-0 feature-row">
-                
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
-                            <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <p class="fs-5 fw-medium text-primary">Why Choose Us</p>
+                <h2 class="display-5">Full-service digital marketing with measurable results</h2>
+                <p class="text-muted">We combine strategy, creativity and data to deliver campaigns that scale — from brand to performance.</p>
+            </div>
+
+            <div class="row g-4 features-grid">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card p-4 h-100 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-icon bg-gradient-primary rounded-circle mb-3 d-inline-flex align-items-center justify-content-center">
+                            <i class="fas fa-bullhorn text-white"></i>
                         </div>
-                        <h5 class="mb-3">Full-Service Approach</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+                        <h5 class="mb-2">Integrated Campaigns</h5>
+                        <p class="mb-3 text-muted">Cross-channel campaigns (Search, Social, Video) designed to increase conversions and brand awareness.</p>
+                        <a href="service.html" class="text-primary fw-medium">Learn more <i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
-                            <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card p-4 h-100 wow fadeInUp" data-wow-delay="0.35s">
+                        <div class="feature-icon bg-gradient-accent rounded-circle mb-3 d-inline-flex align-items-center justify-content-center">
+                            <i class="fas fa-chart-line text-white"></i>
                         </div>
-                        <h5 class="mb-3">Fair Prices</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+                        <h5 class="mb-2">Data & Analytics</h5>
+                        <p class="mb-3 text-muted">Custom dashboards, attribution and testing frameworks so you always know what’s working.</p>
+                        <a href="project.html" class="text-primary fw-medium">View case studies <i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
-                            <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-icon bg-gradient-soft rounded-circle mb-3 d-inline-flex align-items-center justify-content-center">
+                            <i class="fas fa-pen-nib text-white"></i>
                         </div>
-                        <h5 class="mb-3">24/7 Support</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+                        <h5 class="mb-2">Creative & Content</h5>
+                        <p class="mb-3 text-muted">High-impact creative, short-form video and storytelling that capture attention and convert.</p>
+                        <a href="project.html" class="text-primary fw-medium">See our work <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card p-4 h-100 wow fadeInUp" data-wow-delay="0.65s">
+                        <div class="feature-icon bg-gradient-cta rounded-circle mb-3 d-inline-flex align-items-center justify-content-center">
+                            <i class="fas fa-hand-holding-usd text-white"></i>
+                        </div>
+                        <h5 class="mb-2">Performance Marketing</h5>
+                        <p class="mb-3 text-muted">ROI-first paid media, conversion rate optimization and growth experiments to scale revenue.</p>
+                        <a href="service.html" class="text-primary fw-medium">Get a proposal <i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     <!-- Features End -->
@@ -453,60 +877,47 @@
     <!-- About Start -->
     <div class="container-xxl about my-5">
         <div class="container">
-            <div class="row g-0">
+            <div class="row g-0 align-items-center">
                 <div class="col-lg-6">
-                    <div class="h-100 d-flex align-items-center justify-content-center" style="min-height: 300px;">
-                        <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
+                    <div class="about-illustration d-flex align-items-center justify-content-center h-100 p-4">
+                        <img class="img-fluid rounded shadow-sm about-img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1400&q=80" alt="About AppsRoot - our team and workspace" loading="lazy">
                     </div>
                 </div>
                 <div class="col-lg-6 pt-lg-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="bg-white rounded-top p-5 mt-lg-5">
                         <p class="fs-5 fw-medium text-primary">About Us</p>
-                        <h1 class="display-6 mb-4">The Best Marketing Agency to Improve Your Business</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                        <div class="row g-5 pt-2 mb-5">
+                        <h1 class="display-6 mb-4">We build growth for ambitious brands</h1>
+                        <p class="mb-4 text-muted">AppsRoot partners with growing companies to design and execute digital marketing programs that drive measurable revenue. We combine audience research, creative production, and rigorous optimization to turn attention into customers.</p>
+
+                        <div class="row g-3 about-features mb-4">
                             <div class="col-sm-6">
-                                <img class="img-fluid mb-4" src="img/icon/icon-5.png" alt="">
-                                <h5 class="mb-3">Managed Services</h5>
-                                <span>Clita erat ipsum et lorem et sit sed stet lorem</span>
+                                <h6 class="mb-1 fw-semibold">Audience-first Strategy</h6>
+                                <p class="small text-muted mb-0">Research-driven planning to reach the right people at the right time.</p>
                             </div>
                             <div class="col-sm-6">
-                                <img class="img-fluid mb-4" src="img/icon/icon-2.png" alt="">
-                                <h5 class="mb-3">Dedicated Experts</h5>
-                                <span>Clita erat ipsum et lorem et sit sed stet lorem</span>
+                                <h6 class="mb-1 fw-semibold">High-impact Creative</h6>
+                                <p class="small text-muted mb-0">Short-form video, display and native creative built to convert.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h6 class="mb-1 fw-semibold">Performance Media</h6>
+                                <p class="small text-muted mb-0">Paid social & search campaigns optimized for ROI and scale.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h6 class="mb-1 fw-semibold">Data & Measurement</h6>
+                                <p class="small text-muted mb-0">Custom dashboards, experiments and clear reporting for decisions.</p>
                             </div>
                         </div>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Explore More</a>
+
+                        <div class="d-flex flex-wrap align-items-center">
+                            <a class="btn btn-primary rounded-pill py-3 px-4 me-3" href="service.html">Explore Services</a>
+                            <a class="btn btn-outline-primary rounded-pill py-3 px-4" href="project.html">View Case Studies</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
 
 
     <!-- Service Start -->
@@ -523,11 +934,11 @@
                             <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">Digital Marketing</h4>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet</p>
+                            <h5 class="mb-3">Digital Marketing</h5>
+                            <p class="mb-0">Omnichannel strategies combining SEO, PPC, social and content to drive qualified traffic, increase conversions, and grow sustainable revenue.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
+                            <a class="text-primary fw-medium" href="service.html#digital-marketing">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -537,11 +948,11 @@
                             <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">Internet Marketing</h4>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet</p>
+                            <h5 class="mb-3">Search & Display Advertising</h5>
+                            <p class="mb-0">Data-driven SEM and display campaigns, including smart bidding and retargeting, designed to maximize ROI and lower customer acquisition cost.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
+                            <a class="text-primary fw-medium" href="service.html#ppc">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -551,11 +962,11 @@
                             <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="img/icon/icon-7.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">Content Marketing</h4>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet</p>
+                            <h5 class="mb-3">Content Strategy & Production</h5>
+                            <p class="mb-0">Strategic content planning and production — blogs, video, and social creative — that build brand authority and nurture leads through the funnel.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
+                            <a class="text-primary fw-medium" href="service.html#content-marketing">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -565,11 +976,11 @@
                             <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="img/icon/icon-8.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">Social Marketing</h4>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet</p>
+                            <h5 class="mb-3">Social Media Marketing</h5>
+                            <p class="mb-0">Organic and paid social strategies across Facebook, Instagram, YouTube and LinkedIn to grow audience, engagement and conversion.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
+                            <a class="text-primary fw-medium" href="service.html#social-marketing">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -579,11 +990,11 @@
                             <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="img/icon/icon-9.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">B2B Marketing</h4>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet</p>
+                            <h5 class="mb-3">B2B Demand Generation</h5>
+                            <p class="mb-0">Account-based marketing, lead generation programs and sales enablement that accelerate pipeline for B2B and enterprise clients.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
+                            <a class="text-primary fw-medium" href="service.html#b2b">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -593,11 +1004,11 @@
                             <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="img/icon/icon-10.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">E-mail Marketing</h4>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet</p>
+                            <h5 class="mb-3">Email & Marketing Automation</h5>
+                            <p class="mb-0">Lifecycle email programs, marketing automation and segmentation to increase retention, LTV and repeat purchase rates.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
+                            <a class="text-primary fw-medium" href="service.html#email-marketing">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -610,64 +1021,74 @@
     <!-- Project Start -->
     <div class="container-xxl pt-5">
         <div class="container">
-            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <div class="text-center text-md-start pb-4 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 620px;">
                 <p class="fs-5 fw-medium text-primary">Our Projects</p>
-                <h1 class="display-5 mb-5">We've Done Lot's of Awesome Projects</h1>
+                <h1 class="display-5 mb-3">Recently Delivered Work</h1>
+                <p class="text-muted">Selected case studies showing strategy, creative, and measurable results across channels.</p>
             </div>
-            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="img/project-1.jpg" alt="">
-                        <div class="project-overlay">
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="project-item rounded overflow-hidden h-100 position-relative">
+                        <img class="img-fluid" src="img/project-1.jpg" alt="Data Analytics & Insights case study">
+                        <div class="project-overlay d-flex align-items-center justify-content-center">
                             <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-1.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="project.html#analytics"><i class="fa fa-link"></i></a>
+                        </div>
+                        <div class="p-4">
+                            <a class="d-block h5 mb-1" href="project.html#analytics">Data Analytics & Insights</a>
+                            <span class="text-muted small">Custom dashboards and experiments that boosted conversions and clarity.</span>
                         </div>
                     </div>
-                    <div class="p-4">
-                        <a class="d-block h5" href="">Data Analytics & Insights</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
-                    </div>
                 </div>
-                <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="img/project-2.jpg" alt="">
-                        <div class="project-overlay">
+
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="project-item rounded overflow-hidden h-100 position-relative">
+                        <img class="img-fluid" src="img/project-2.jpg" alt="Marketing Content Strategy case study">
+                        <div class="project-overlay d-flex align-items-center justify-content-center">
                             <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-2.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="project.html#content"><i class="fa fa-link"></i></a>
+                        </div>
+                        <div class="p-4">
+                            <a class="d-block h5 mb-1" href="project.html#content">Marketing Content Strategy</a>
+                            <span class="text-muted small">Short-form video and social creative that increased engagement.</span>
                         </div>
                     </div>
-                    <div class="p-4">
-                        <a class="d-block h5" href="">Marketing Content Strategy</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
-                    </div>
                 </div>
-                <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="img/project-3.jpg" alt="">
-                        <div class="project-overlay">
+
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="project-item rounded overflow-hidden h-100 position-relative">
+                        <img class="img-fluid" src="img/project-3.jpg" alt="Business Target Market case study">
+                        <div class="project-overlay d-flex align-items-center justify-content-center">
                             <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-3.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="project.html#market"><i class="fa fa-link"></i></a>
                         </div>
-                    </div>
-                    <div class="p-4">
-                        <a class="d-block h5" href="">Business Target Market</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
+                        <div class="p-4">
+                            <a class="d-block h5 mb-1" href="project.html#market">Business Target Market</a>
+                            <span class="text-muted small">Audience targeting and funnel work that drove qualified leads.</span>
+                        </div>
                     </div>
                 </div>
-                <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="img/project-4.jpg" alt="">
-                        <div class="project-overlay">
+
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="project-item rounded overflow-hidden h-100 position-relative">
+                        <img class="img-fluid" src="img/project-4.jpg" alt="Social Marketing Strategy case study">
+                        <div class="project-overlay d-flex align-items-center justify-content-center">
                             <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-4.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="project.html#social"><i class="fa fa-link"></i></a>
                         </div>
-                    </div>
-                    <div class="p-4">
-                        <a class="d-block h5" href="">Social Marketing Strategy</a>
-                        <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span>
+                        <div class="p-4">
+                            <a class="d-block h5 mb-1" href="project.html#social">Social Marketing Strategy</a>
+                            <span class="text-muted small">Integrated paid + organic campaigns that scaled reach and ROI.</span>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="text-center mt-5">
+                <a href="project.html" class="btn btn-outline-primary rounded-pill px-4 py-2">View All Projects</a>
+            </div>
+
         </div>
     </div>
     <!-- Project End -->
@@ -676,66 +1097,101 @@
     <!-- Quote Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="row g-5">
+            <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-medium text-primary">Get A Quote</p>
-                    <h1 class="display-5 mb-4">Need Our Expert Help? We're Here!</h1>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <a class="d-inline-flex align-items-center rounded overflow-hidden border border-primary" href="">
-                        <span class="btn-lg-square bg-primary" style="width: 55px; height: 55px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </span>
-                        <span class="fs-5 fw-medium mx-4">+012 345 6789</span>
-                    </a>
+                    <div class="pe-lg-5">
+                        <p class="fs-5 fw-medium text-primary">Get A Quote</p>
+                        <h2 class="display-6 mb-4">Tell us about your project — we'll take it from here</h2>
+                        <p class="text-muted mb-4">Briefly describe your goals and budget and we’ll recommend the fastest path to measurable growth. Our team responds within 1 business day.</p>
+
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2"><i class="fa fa-check text-primary me-2"></i>Custom strategy tailored to your audience</li>
+                            <li class="mb-2"><i class="fa fa-check text-primary me-2"></i>Creative that drives action</li>
+                            <li class="mb-2"><i class="fa fa-check text-primary me-2"></i>Clear measurement and ROI focus</li>
+                        </ul>
+
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="tel:+0123456789" class="btn btn-primary rounded-pill px-4 py-2"><i class="fa fa-phone-alt me-2"></i>Call Us</a>
+                            <a href="mailto:info@example.com" class="btn btn-outline-primary rounded-pill px-4 py-2"><i class="fa fa-envelope me-2"></i>Email Us</a>
+                        </div>
+
+                        <small class="d-block text-muted mt-4">Prefer a quick chat? Click Call Us and we'll schedule a time.</small>
+                    </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h2 class="mb-4">Get A Free Quote</h2>
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-white rounded p-4 p-md-5 shadow-sm">
+                        <form id="quote-form" action="#" method="post" enctype="multipart/form-data" novalidate>
+                            <div id="quote-alert" class="alert alert-success d-none" role="alert">Thanks — your request has been received. We’ll contact you within 1 business day.</div>
+
+                            <div class="mb-3 form-floating">
+                                <input type="text" class="form-control" id="q-name" name="name" placeholder="Your name" required>
+                                <label for="q-name">Full name</label>
                             </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="mail" placeholder="Your Email">
-                                <label for="mail">Your Email</label>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3 form-floating">
+                                    <input type="email" class="form-control" id="q-email" name="email" placeholder="you@company.com" required>
+                                    <label for="q-email">Email address</label>
+                                </div>
+                                <div class="col-md-6 mb-3 form-floating">
+                                    <input type="tel" class="form-control" id="q-phone" name="phone" placeholder="+91 98765 43210" required>
+                                    <label for="q-phone">Phone</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
-                                <label for="mobile">Your Mobile</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="service">
-                                    <option selected>Digital Marketing</option>
-                                    <option value="">Social Marketing</option>
-                                    <option value="">Content Marketing</option>
-                                    <option value="">E-mail Marketing</option>
+
+                            <div class="mb-3 form-floating">
+                                <select class="form-select" id="q-service" name="service" aria-label="Service" required>
+                                    <option value="Digital Marketing" selected>Digital Marketing</option>
+                                    <option value="Social Marketing">Social Marketing</option>
+                                    <option value="Content Marketing">Content Marketing</option>
+                                    <option value="Email Marketing">E-mail Marketing</option>
                                 </select>
-                                <label for="service">Choose A Service</label>
+                                <label for="q-service">Service interest</label>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 130px"></textarea>
-                                <label for="message">Message</label>
+
+                            <div class="mb-3 form-floating">
+                                <textarea class="form-control" id="q-message" name="message" placeholder="Briefly describe your project" style="height:120px" required></textarea>
+                                <label for="q-message">Project details</label>
                             </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                        </div>
+
+                            <div class="mb-3">
+                                <label class="form-label small">Attach brief (optional)</label>
+                                <input class="form-control" type="file" id="q-file" name="attachment" accept=".pdf,.doc,.docx,.png,.jpg">
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="q-consent" required>
+                                <label class="form-check-label small" for="q-consent">I agree to be contacted about my project and accept the privacy policy.</label>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">Request Quote</button>
+                            </div>
+                        </form>
+
+                        <script>
+                            (function(){
+                                var form = document.getElementById('quote-form');
+                                var alertBox = document.getElementById('quote-alert');
+                                form.addEventListener('submit', function(e){
+                                    e.preventDefault();
+                                    if (!form.checkValidity()) { form.classList.add('was-validated'); return; }
+                                    // Simulate successful submit (replace with real endpoint)
+                                    alertBox.classList.remove('d-none');
+                                    form.reset();
+                                    form.classList.remove('was-validated');
+                                    // Auto-hide after 5s
+                                    setTimeout(function(){ alertBox.classList.add('d-none'); }, 5000);
+                                });
+                            })();
+                        </script>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Quote Start -->
+    <!-- Quote End -->
 
 
     <!-- Team Start -->
@@ -748,7 +1204,7 @@
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/team-1.jpg" alt="">
+                        <img class="img-fluid mb-4" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="Our Team" loading="lazy">
                         <h5>Alex Robin</h5>
                         <span class="text-primary">Founder & CEO</span>
                         <ul class="team-social">
@@ -897,8 +1353,7 @@
                     &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="fw-medium text-light" href="https://htmlcodex.com">HTML Codex</a>
+                    Built with ♥ by AppsRoot
                 </div>
             </div>
         </div>
